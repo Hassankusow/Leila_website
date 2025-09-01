@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#intro">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Introduction Section -->
+    <section id="intro" class="container text-center mt-5 pt-5">
+      <h1>Welcome to My Portfolio</h1>
+      <img
+        src="hassan.PNG"
+        alt="Profile Picture"
+        class="img-fluid rounded-circle"
+        width="200"
+      />
+      <p class="lead">
+        My name is Hassan abdi. I am a software engineer passionate about
+        building software.
+      </p>
+
+      <!-- LinkedIn Button -->
+      <a
+        href="https://www.linkedin.com/in/hassan-abdi-119357267"
+        target="_blank"
+        class="btn btn-primary mt-3"
+      >
+        Connect on LinkedIn
+      </a>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="container text-center mt-5">
+      <h2>My Resume</h2>
+      <button
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#resumeModal"
+      >
+        View Resume
+      </button>
+
+      <!-- Resume Modal -->
+      <div class="modal fade" id="resumeModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">My Resume</h3>
+
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <iframe
+                src="Resume (1).pdf"
+                width="100%"
+                height="600px"
+                style="border: none"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container text-center mt-5">
+      <h4>Projects</h4>
+
+      <div id="projectSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Project 1 -->
+          <div class="carousel-item active">
+            <a
+              href="https://github.com/Hassankusow/projects-on-Cpp-DataStructures-DerivedClasses"
+              target="_blank"
+              class="project-link"
+            >
+              <div class="card mx-auto">
+                <img
+                  src="image1.jpg"
+                  class="card-img-top"
+                  alt="C++ Project: Data Structures and BST Trees"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">C++ Data Structures & Classes</h5>
+                  <p class="card-text">
+                    Built class hierarchy using templates, operators, and BST
+                    trees.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="carousel-item">
+            <a
+              href="https://github.com/Hassankusow/front-end-web-dev-projects"
+              target="_blank"
+              class="project-link"
+            >
+              <div class="card mx-auto">
+                <img
+                  src="image2.jpg"
+                  class="card-img-top"
+                  alt="Front-End Portfolio: HTML, CSS, JavaScript"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Front-End Web Development</h5>
+                  <p class="card-text">
+                    Portfolio project featuring HTML, CSS, JavaScript, and
+                    Bootstrap.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="carousel-item">
+            <a
+              href="https://github.com/Hassankusow/data-structures"
+              target="_blank"
+              class="project-link"
+            >
+              <div class="card mx-auto">
+                <img
+                  src="image3.jpg"
+                  class="card-img-top"
+                  alt="C++ Data Structures: Linked Lists and Trees"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Data Structures</h5>
+                  <p class="card-text">
+                    Implemented LLL, DLL, CLL, and BST in C++.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="carousel-item">
+            <a
+              href="https://github.com/Hassankusow/python-projects"
+              target="_blank"
+              class="project-link"
+            >
+              <div class="card mx-auto">
+                <img
+                  src="image4.jpg"
+                  class="card-img-top"
+                  alt="Python Projects: Automation and Scripts"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Python Projects</h5>
+                  <p class="card-text">
+                    Various Python-based applications and automation scripts.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#projectSlider"
+          data-bs-slide="prev"
+          aria-label="Previous"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#projectSlider"
+          data-bs-slide="next"
+          aria-label="Next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="container text-center mt-5">
+      <h2>Contact Me</h2>
+      <button id="openFormBtn" class="btn btn-primary">
+        Open Contact Form
+      </button>
+
+      <div id="slideForm" class="slide-in-form">
+        <button id="closeFormBtn" class="close-btn">&times;</button>
+        <h2 class="text-center">Get in Touch</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-control" required />
+          </div>
+          <button type="submit" class="btn btn-success w-100">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="protfolio.js"></script>
+  </body>
+</html>

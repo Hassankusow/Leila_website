@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Women's Collection - Leila Modestwear</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Font Awesome for cart icon -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Snipcart -->
+    <script
+      async
+      src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css"
+    />
+    <div hidden id="snipcart" data-api-key="YOUR_PUBLIC_API_KEY"></div>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header
+      class="d-flex justify-content-between align-items-center p-3 border-bottom sticky-top bg-white shadow-sm"
+    >
+      <div class="logo fs-4 fw-bold">LMC</div>
+      <nav>
+        <ul class="main-nav list-unstyled d-flex gap-4 m-0">
+          <li><a href="clothing.html">ALL</a></li>
+          <li><a href="womens.html">WOMEN</a></li>
+          <li><a href="mens.html">MEN</a></li>
+        </ul>
+      </nav>
+      <div>
+        <button class="btn btn-link snipcart-checkout position-relative">
+          <i class="fas fa-shopping-bag"></i>
+          <span
+            class="snipcart-items-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+            >0</span
+          >
+        </button>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <h2 class="text-center mb-4">Women's Collection</h2>
+
+      <!-- Category Navigation -->
+      <div class="text-center mb-5">
+        <div class="btn-group flex-wrap gap-2" role="group">
+          <a href="#hijabs" class="btn btn-outline-dark">Hijabs</a>
+          <a href="#clothing" class="btn btn-outline-dark">Clothing</a>
+          <a href="#accessories" class="btn btn-outline-dark">Accessories</a>
+          <a href="#shoes" class="btn btn-outline-dark">Shoes</a>
+          <a href="#athleisure" class="btn btn-outline-dark">Athleisure</a>
+        </div>
+      </div>
+
+      <!-- Hijabs Section -->
+      <section id="hijabs" class="mb-5">
+        <h3 class="fw-semibold mb-4 text-center">Hijabs</h3>
+
+        <div class="text-center mb-4">
+          <div class="btn-group flex-wrap gap-2" role="group">
+            <a href="#hijab-sets" class="btn btn-outline-dark">Hijab Sets</a>
+            <a href="#undercaps" class="btn btn-outline-dark">Undercaps</a>
+            <a href="#premium-hijabs" class="btn btn-outline-dark"
+              >Premium Styles</a
+            >
+          </div>
+        </div>
+
+        <section id="hijab-sets" class="mb-4">
+          <h4 class="fw-semibold mb-3">Hijab Sets</h4>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Hijab Set products go here -->
+          </div>
+        </section>
+
+        <section id="undercaps" class="mb-4">
+          <h4 class="fw-semibold mb-3">Undercaps</h4>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Undercaps products go here -->
+          </div>
+        </section>
+
+        <section id="premium-hijabs" class="mb-4">
+          <h4 class="fw-semibold mb-3">Premium Styles</h4>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Premium hijabs go here -->
+          </div>
+        </section>
+      </section>
+
+      <!-- Clothing Section -->
+      <section id="clothing" class="mb-5">
+        <h3 class="fw-semibold mb-4">Clothing</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- Clothing products like Abayas, Dresses, Tunics -->
+        </div>
+      </section>
+
+      <!-- Accessories Section -->
+      <section id="accessories" class="mb-5">
+        <h3 class="fw-semibold mb-4">Accessories</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- Accessories like hijab pins, magnets -->
+        </div>
+      </section>
+
+      <!-- Shoes Section -->
+      <section id="shoes" class="mb-5">
+        <h3 class="fw-semibold mb-4">Shoes</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- Shoes go here -->
+        </div>
+      </section>
+
+      <!-- Athleisure Section -->
+      <section id="athleisure" class="mb-5">
+        <h3 class="fw-semibold mb-4">Athleisure</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- Athleisure items go here -->
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

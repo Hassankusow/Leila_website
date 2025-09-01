@@ -1,0 +1,235 @@
+:root {
+  --taupe: #b8a89a;
+  --beige: #f5ebdd;
+  --cream: #faf9f6;
+  --charcoal: #1f1f1f; /* darker for better text contrast */
+  --shadow: rgba(0, 0, 0, 0.05);
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--beige); /* full-page beige */
+  color: var(--charcoal); /* dark text for contrast */
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  background-color: var(--beige); /* match background */
+  box-shadow: 0 1px 5px var(--shadow);
+  border-bottom: 1px solid var(--taupe);
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--charcoal);
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--charcoal);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--taupe);
+}
+
+/* Icons */
+.icons button,
+.snipcart-checkout {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--charcoal);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icons button:hover,
+.snipcart-checkout:hover {
+  color: var(--taupe);
+}
+
+/* Section Headings */
+section h2,
+section h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: var(--charcoal);
+}
+.hero {
+  background-color: #a08d7c; /* deeper taupe for better contrast */
+  color: var(--white);
+  padding: 5rem 1rem;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.9); /* softer white for readability */
+}
+
+.hero-links .btn {
+  font-weight: 500;
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
+}
+
+.hero-links .btn-outline-dark {
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+  transition: all 0.3s ease;
+}
+
+.hero-links .btn-outline-dark:hover {
+  background-color: var(--white);
+  color: var(--taupe);
+}
+
+.hero-links .btn-dark {
+  background-color: var(--charcoal);
+  color: var(--white);
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero-links .btn-dark:hover {
+  background-color: var(--taupe);
+  color: var(--white);
+}
+
+/* Cards & Product Styles */
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  background-color: var(--white);
+  border: none;
+  box-shadow: 0 2px 6px var(--shadow);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-weight: 500;
+  margin-top: 0.5rem;
+  color: var(--charcoal);
+}
+
+.card-text {
+  color: var(--taupe);
+}
+
+/* Add to Cart Button */
+.snipcart-add-item {
+  border-radius: 25px;
+  padding: 0.5rem 1.25rem;
+  font-weight: 500;
+}
+
+/* Collection Images */
+section img {
+  border-radius: 10px;
+  box-shadow: 0 2px 6px var(--shadow);
+}
+
+/* Newsletter Form */
+#newsletter input.form-control {
+  border-radius: 25px 0 0 25px;
+  padding: 0.75rem 1rem;
+  border-color: var(--taupe);
+  background-color: var(--white);
+  color: var(--charcoal);
+}
+
+#newsletter input::placeholder {
+  color: #999;
+}
+
+#newsletter .btn {
+  border-radius: 0 25px 25px 0;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--charcoal);
+  color: var(--white);
+}
+
+#newsletter .btn:hover {
+  background-color: var(--taupe);
+}
+
+/* Footer */
+footer {
+  background-color: var(--cream);
+  color: var(--charcoal);
+  font-size: 0.95rem;
+  border-top: 1px solid var(--taupe);
+}
+
+footer a {
+  color: var(--charcoal);
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--taupe);
+}
+
+/* Cart Badge */
+.snipcart-items-count {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  color: var(--white);
+}
+/* New Arrivals Carousel - subtle integration */
+#new .carousel-inner {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+/* Make carousel arrows small, black, and subtle */
+#new .carousel-control-prev-icon,
+#new .carousel-control-next-icon {
+  background-image: none;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--charcoal); /* black arrow background */
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E")
+    center/contain no-repeat;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E")
+    center/contain no-repeat;
+}
+
+#new .carousel-control-next-icon {
+  transform: scaleX(-1); /* Flip for right arrow */
+}
